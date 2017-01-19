@@ -8,6 +8,7 @@ import { MusicComponent } from './music/music.component';
 import { MarketComponent } from './market/market.component';
 import { BlogComponent } from './blog/blog.component';
 
+import { AppRoutingModule } from './app.routing';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 
@@ -19,6 +20,7 @@ import 'hammerjs';
     BlogComponent
   ],
   imports: [
+    AppRoutingModule,
     BrowserModule,
     MaterialModule.forRoot(),
     FormsModule,
