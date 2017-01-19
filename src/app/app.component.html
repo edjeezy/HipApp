@@ -9,17 +9,46 @@
   </md-toolbar>
 
     <md-sidenav class="sidenav-dim" #nav mode="push" align="start" opened="false">
-      <h2 class="black-txt"> HipApp </h2>
+      <button md-icon-button class="black-bg icon-close" (click)="nav.close()">
+         <md-icon style="color: white;">close</md-icon> 
+      </button>
       <hr>
-      links goes here
+
+      <div class="link-content" >
+        <a routerLink="/music">
+        <span class="black-txt">
+          <button md-icon-button>
+            <md-icon class="black-txt">library_music</md-icon>
+          </button > Musique
+        </span>  
+        </a>
+        <br>
+        <a routerLink="/blog">
+          <span class="black-txt">
+            <button md-icon-button>
+              <md-icon class="black-txt">people</md-icon>
+            </button > Social
+        </span>
+        </a>
+        <br>
+        <a routerLink="/market">
+          <span class="black-txt">
+            <button md-icon-button>
+              <md-icon class="black-txt">shopping_basket</md-icon>
+            </button > Boutique
+        </span>
+        </a>
+
+      </div>
+      <hr>
     </md-sidenav>
-    <md-sidenav class="sidenav-dim" #playlist mode="side" align="end" opened="false">
+    <md-sidenav class="sidenav-dim" #playlist mode="push" align="end" opened="false">
       <button md-icon-button class="black-bg icon-close" (click)="playlist.close()">
          <md-icon style="color: white;">close</md-icon> 
       </button>
       <span style="font-weight: 20; font-size: 22px;margin-top: 5px;"><strong>Playlist</strong>  </span>
       <hr>
-      links goes here
+
     </md-sidenav>
 
     <router-outlet></router-outlet>
