@@ -11,13 +11,15 @@ import { BlogComponent } from './blog/blog.component';
 import { AppRoutingModule } from './app.routing';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MusicComponent,
     MarketComponent,
-    BlogComponent
+    BlogComponent,
+    HomeComponent
   ],
   imports: [
     AppRoutingModule,
