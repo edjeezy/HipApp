@@ -3,7 +3,7 @@
     <button md-icon-button (click)="nav.open()" > <md-icon class="black-txt">menu</md-icon> </button>
     <span class="black-txt toolbar-margin">HipApp</span>
     <span class="fill-space"></span>
-    <button md-mini-fab (click)="playlist.open()" class="fab-play black-bg">
+    <button md-fab (click)="playlist.open()" class="fab-play black-bg">
        <md-icon>playlist_play</md-icon> 
     </button>
   </md-toolbar>
@@ -17,9 +17,10 @@
       <button md-icon-button class="black-bg icon-close" (click)="playlist.close()">
          <md-icon style="color: white;">close</md-icon> 
       </button>
-      <span style="font-weight: 20; font-size: 22px;">Playlist </span>
+      <span style="font-weight: 20; font-size: 22px;margin-top: 5px;"><strong>Playlist</strong>  </span>
       <hr>
       links goes here
     </md-sidenav>
+
     <router-outlet></router-outlet>
 </md-sidenav-container>

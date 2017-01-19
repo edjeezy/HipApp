@@ -9,6 +9,10 @@
 
 .sidenav-dim{
     width: 300px;
+
+}
+
+md-sidenav-container{
     height: 100vh;
 }
 
