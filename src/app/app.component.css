@@ -6,3 +6,20 @@
     margin-left:  10px;
     margin-right: 5px;
 }
+
+.sidenav-dim{
+    width: 350px;
+    height: 100vh;
+}
+
+button.fab-play{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+
+.icon-close{
+    margin-top: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+}

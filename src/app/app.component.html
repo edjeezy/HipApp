@@ -1,6 +1,25 @@
-<md-toolbar color="primary" class="navbar navbar-default navbar-fixed-top">
-  <button md-icon-button > <md-icon class="black-txt">menu</md-icon> </button>
-  <span class="black-txt toolbar-margin">HipApp</span>
-  <span class="fill-space"></span>
-  <button md-raised-button class="black-bg hidden-sm-down">Connexion</button>
-</md-toolbar>
+<md-sidenav-container> 
+  <md-toolbar color="primary" >
+    <button md-icon-button (click)="nav.open()" > <md-icon class="black-txt">menu</md-icon> </button>
+    <span class="black-txt toolbar-margin">HipApp</span>
+    <span class="fill-space"></span>
+    <button md-mini-fab (click)="playlist.open()" class="fab-play black-bg">
+       <md-icon>playlist_play</md-icon> 
+    </button>
+  </md-toolbar>
+
+    <md-sidenav class="sidenav-dim" #nav mode="push" align="start" opened="false">
+      <h2 class="black-txt"> HipApp </h2>
+      <hr>
+      links goes here
+    </md-sidenav>
+    <md-sidenav class="sidenav-dim" #playlist mode="side" align="end" opened="false">
+      <button md-icon-button class="black-bg icon-close" (click)="playlist.close()">
+         <md-icon style="color: white;">close</md-icon> 
+      </button>
+      <span style="font-weight: 20; font-size: 22px;">Playlist </span>
+      <hr>
+      links goes here
+    </md-sidenav>
+
+</md-sidenav-container>
