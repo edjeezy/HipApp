@@ -8,6 +8,9 @@ import { MusicComponent } from './music/music.component';
 import { MarketComponent } from './market/market.component';
 import { BlogComponent } from './blog/blog.component';
 
+import { MaterialModule } from '@angular/material';
+import 'hammerjs';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -17,6 +20,7 @@ import { BlogComponent } from './blog/blog.component';
   ],
   imports: [
     BrowserModule,
+    MaterialModule.forRoot(),
     FormsModule,
     HttpModule
   ],
