@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { MusicComponent } from './music/music.component';
 import { MarketComponent } from './market/market.component';
 import { BlogComponent } from './blog/blog.component';
+import { HomeComponent } from './home/home.component';
 
+import { PopoverModule } from 'ng2-bootstrap';
 import { AppRoutingModule } from './app.routing';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
-import { HomeComponent } from './home/home.component';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { HomeComponent } from './home/home.component';
     BrowserModule,
     MaterialModule.forRoot(),
     FormsModule,
-    HttpModule
+    HttpModule,
+    PopoverModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
