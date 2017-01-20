@@ -9,11 +9,20 @@ import { MarketComponent } from './market/market.component';
 import { BlogComponent } from './blog/blog.component';
 import { HomeComponent } from './home/home.component';
 
-import { PopoverModule } from 'ng2-bootstrap';
+import { AngularFireModule } from 'angularfire2';
 import { AppRoutingModule } from './app.routing';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 
+import { AuthService } from './shared/auth.service';
+
+export const firebaseConfig = {
+    apiKey: 'AIzaSyCygtE4KSt0-Li0JBNeQoQ9GboFoZpfHHU',
+    authDomain: 'hipapp-sn.firebaseapp.com',
+    databaseURL: 'https://hipapp-sn.firebaseio.com',
+    storageBucket: 'hipapp-sn.appspot.com',
+    messagingSenderId: '669200317623'
+};
 
 @NgModule({
   declarations: [
@@ -29,9 +38,9 @@ import 'hammerjs';
     MaterialModule.forRoot(),
     FormsModule,
     HttpModule,
-    PopoverModule.forRoot()
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
