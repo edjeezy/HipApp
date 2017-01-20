@@ -27,3 +27,12 @@ button.fab-play{
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.nav-txt{
+    font-size: 22px;
+    font-weight: 25;
+}
+
+.active{
+    background-color: #e53935;
+}

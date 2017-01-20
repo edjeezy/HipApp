@@ -7,7 +7,7 @@ import { BlogComponent } from './blog/blog.component';
 import { MarketComponent } from './market/market.component';
 
 const routes: Routes = [
-    { path: '', redirectTo : 'music', pathMatch : 'full' },
+    { path: '', redirectTo : 'home', pathMatch : 'full' },
     { path: 'home', component : HomeComponent },
     { path: 'market', component : MarketComponent },
     { path: 'blog', component: BlogComponent },

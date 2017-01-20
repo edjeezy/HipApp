@@ -13,34 +13,31 @@
          <md-icon style="color: white;">close</md-icon> 
       </button>
       <hr>
-
-      <div class="link-content" >
-        <a routerLink="/music">
-        <span class="black-txt">
+    <div routerLink="/music" routerLinkActive="active"> 
+        <div class="black-txt">
           <button md-icon-button>
             <md-icon class="black-txt">library_music</md-icon>
-          </button > Musique
-        </span>  
-        </a>
-        <br>
-        <a routerLink="/blog">
-          <span class="black-txt">
+          </button > <span class="nav-txt">Musique</span>
+        </div> 
+    </div>
+      
+      <div routerLink="/blog" routerLinkActive="active">
+          <div class="black-txt">
             <button md-icon-button>
               <md-icon class="black-txt">people</md-icon>
-            </button > Social
-        </span>
-        </a>
-        <br>
-        
-        <a routerLink="/market">
-          <span class="black-txt">
+              </button > <span class="nav-txt">Social</span>
+            </div>
+      </div>
+    
+       
+        <div routerLink="/market" routerLinkActive="active">
+          <div class="black-txt">
             <button md-icon-button>
               <md-icon class="black-txt">shopping_basket</md-icon>
-            </button > Boutique
-        </span>
-        </a>
-
-      </div>
+            </button > <span class="nav-txt">Boutique</span> 
+          </div>
+        </div>
+       
       <hr>
     </md-sidenav>
     <md-sidenav class="sidenav-dim" #playlist mode="push" align="end" opened="false">
